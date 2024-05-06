@@ -76,7 +76,7 @@ require('mason-lspconfig').setup({
 -- Automatically close brackets
 require("autoclose").setup()
 
--- Autoompletion
+-- Autocompletion
 local cmp = require('cmp')
 
 cmp.setup({
@@ -110,6 +110,7 @@ cmp.setup({
   },
 })
 
+-- Ocaml
 vim.api.nvim_create_autocmd("FileType", {
     pattern = { "ocaml" },
     group = augroup,
