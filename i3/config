@@ -193,10 +193,11 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-exec polybar
-exec picom 
-exec feh --bg-fill /home/teo/Downloads/wall.jpg
-exec imwheel
+exec --no-startup-id polybar
+exec --no-startup-id picom 
+exec --no-startup-id feh --bg-fill /home/teo/Downloads/wall.jpg
+exec --no-startup-id imwheel
+exec --no-startup-id xrandr --output DP-4 --mode 2560x1600 --rate 165 
 
 bindsym $mod+Mod1+l exec librewolf
 bindsym $mod+Mod1+s exec steam
