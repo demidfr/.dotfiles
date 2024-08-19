@@ -201,7 +201,7 @@ exec --no-startup-id xrandr --output DP-4 --mode 2560x1600 --rate 165
 bindsym $mod+Mod1+l exec librewolf
 bindsym $mod+Mod1+s exec steam
 bindsym $mod+Mod1+q exec qbittorrent
-bindsym $mod+Mod1+d exec discord
+bindsym $mod+Mod1+d exec discord-canary
 bindsym $mod+Mod1+c exec i3lock
 
 bindsym $mod+Mod1+Shift+e exec librewolf reddit.com

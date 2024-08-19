@@ -10,7 +10,6 @@ alias ls='ls --color=auto'
 
 [ -f "/home/teo/.ghcup/env" ] && . "/home/teo/.ghcup/env" # ghcup-env
 
-alias start="sudo rfkill unblock all && sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf && sudo dhcpcd"
 alias archbtw="fastfetch"
 alias vim="nvim"
 
