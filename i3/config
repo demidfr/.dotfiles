@@ -201,13 +201,9 @@ exec --no-startup-id xrandr --output DP-4 --mode 2560x1600 --rate 165
 bindsym $mod+Mod1+l exec librewolf
 bindsym $mod+Mod1+s exec steam
 bindsym $mod+Mod1+q exec qbittorrent
-bindsym $mod+Mod1+d exec discord-canary
-bindsym $mod+Mod1+c exec i3lock
-
-bindsym $mod+Mod1+Shift+e exec librewolf reddit.com
-bindsym $mod+Mod1+Shift+y exec librewolf youtube.com
-bindsym $mod+Mod1+Shift+o exec librewolf 4chan.org
-bindsym $mod+Mod1+Shift+d exec librewolf duckduckgo.org
+bindsym $mod+Mod1+d exec librewolf https://discord.com/channels/@me
+bindsym $mod+Mod1+g exec ghostwriter
+bindsym $mod+Mod1+k exec krita
 
 bindsym $mod+Mod1+Ctrl+h exec kitty --hold --detach neofetch | more
 bindsym $mod+Mod1+Ctrl+j exec kitty --hold --detach btop
