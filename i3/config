@@ -185,9 +185,9 @@ bindsym $mod+r mode "resize"
 
 default_border pixel 1
 
-client.focused          #665c54 #285577 #ffffff #665c54   #665c54
-client.focused_inactive #1d2021 #5f676a #ffffff #484e50   #282828
-client.unfocused        #1d2021 #222222 #888888 #292d2e   #282828
+client.focused          #665c54 #285577 #ffffff #ac3231   #ac3231
+client.focused_inactive #1d2021 #5f676a #ffffff #5a2d28   #5a2d28
+client.unfocused        #1d2021 #222222 #888888 #5a2d28   #5a2d28
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
@@ -195,7 +195,7 @@ client.background       #ffffff
 
 exec --no-startup-id polybar
 exec --no-startup-id picom 
-exec --no-startup-id feh --bg-fill /home/teo/Downloads/wall.jpg
+exec --no-startup-id feh --bg-fill /home/teo/wall.png
 exec --no-startup-id xrandr --output DP-4 --mode 2560x1600 --rate 165 
 
 bindsym $mod+Mod1+l exec librewolf
@@ -204,12 +204,13 @@ bindsym $mod+Mod1+q exec qbittorrent
 bindsym $mod+Mod1+d exec librewolf https://discord.com/channels/@me
 bindsym $mod+Mod1+g exec ghostwriter
 bindsym $mod+Mod1+k exec krita
+bindsym $mod+Mod1+y exec librewolf https://youtube.com
+bindsym $mod+Mod1+x exec librewolf https://x.com
+bindsym $mod+Mod1+r exec librewolf https://reddit.com
+bindsym $mod+Mod1+u exec r2modman --no-sandbox
 
-bindsym $mod+Mod1+Ctrl+h exec kitty --hold --detach neofetch | more
-bindsym $mod+Mod1+Ctrl+j exec kitty --hold --detach btop
-bindsym $mod+Mod1+Ctrl+k exec kitty --hold --detach cava
+gaps inner 13
+gaps outer 3
+#smart_gaps on
 
-smart_borders on
-gaps inner 15
-gaps outer 5
-smart_gaps on
+gaps top 20

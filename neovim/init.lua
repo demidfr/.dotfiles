@@ -32,9 +32,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
--- Colorscheme
-vim.cmd([[colorscheme gruvbox]])
-
 -- Harpoon
 local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -117,3 +114,6 @@ vim.api.nvim_create_autocmd("FileType", {
     desc = "",
     command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4"
 })
+
+-- Rust
+

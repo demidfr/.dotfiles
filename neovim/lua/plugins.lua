@@ -1,10 +1,13 @@
 return {
-	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000 ,
-		config = true
-	},
-	{"nvim-treesitter/nvim-treesitter"},
+{
+  "Tsuzat/NeoSolarized.nvim",
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      vim.cmd [[ colorscheme NeoSolarized ]]
+    end
+},	
+{"nvim-treesitter/nvim-treesitter"},
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.6",
@@ -42,4 +45,16 @@ return {
 	{"hrsh7th/cmp-cmdline"},
 	{"hrsh7th/cmp-buffer"},
 	{"hrsh7th/cmp-nvim-lsp"},
+	{
+  	'mrcjkb/rustaceanvim',
+  	version = '^5', -- Recommended
+	lazy = false, -- This plugin is already lazy
+	init = function()
+    vim.api.nvim_create_autocmd({'BufWritePre'}, {
+      pattern = '*.rs',
+      command = "RustFmt"
+    })
+	end,
+
+	},
 }
